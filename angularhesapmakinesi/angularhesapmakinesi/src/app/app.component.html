@@ -1,0 +1,23 @@
+<div class="box">
+  <div class="displays"><input type="text" [(ngModel)]="displayValue" disabled></div>
+  <div class="keys">
+    <div class="box-container">
+    <button class="button black" (click)="addToDisplay(7)">7</button>
+    <button class="button black"  (click)="addToDisplay(8)">8</button>
+    <button class="button black"  (click)="addToDisplay(9)">9</button>
+    <button class="button"  (click)="addOperator('+')">+</button>
+    <button class="button black"  (click)="addToDisplay(4)">4</button>
+    <button class="button black"  (click)="addToDisplay(5)">5</button>
+    <button class="button black"  (click)="addToDisplay(6)">6</button>
+    <button class="button"  (click)="addOperator('-')">-</button>
+    <button class="button black"  (click)="addToDisplay(1)">1</button>
+    <button class="button black"  (click)="addToDisplay(2)">2</button>
+    <button class="button black"  (click)="addToDisplay(3)">3</button>
+    <button class="button"  (click)="addOperator('*')">*</button>
+    <button class="button black"  (click)="addToDisplay(0)">0</button>
+    <button class="button"  (click)="clear()">C</button>
+    <button class="button"  (click)="calculate()">=</button>
+    <button class="button"  (click)="addOperator('/')">/</button>
+  </div>
+  </div>
+  <router-outlet></router-outlet>
